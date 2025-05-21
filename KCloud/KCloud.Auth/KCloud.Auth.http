@@ -1,0 +1,1 @@
+@KCloud.Auth_HostAddress = http://localhost:5256GET {{KCloud.Auth_HostAddress}}/weatherforecast/Accept: application/json###

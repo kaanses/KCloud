@@ -1,0 +1,1 @@
+﻿namespace KCloud.Common;public class Class1{}
