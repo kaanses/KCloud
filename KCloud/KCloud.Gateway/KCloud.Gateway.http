@@ -1,0 +1,1 @@
+@KCloud.Gateway_HostAddress = http://localhost:5178GET {{KCloud.Gateway_HostAddress}}/weatherforecast/Accept: application/json###

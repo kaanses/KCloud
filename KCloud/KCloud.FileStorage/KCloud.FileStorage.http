@@ -1,0 +1,1 @@
+@KCloud.FileStorage_HostAddress = http://localhost:5264GET {{KCloud.FileStorage_HostAddress}}/weatherforecast/Accept: application/json###

@@ -1,0 +1,1 @@
+@KCloud.FileMetadata_HostAddress = http://localhost:5009GET {{KCloud.FileMetadata_HostAddress}}/weatherforecast/Accept: application/json###
