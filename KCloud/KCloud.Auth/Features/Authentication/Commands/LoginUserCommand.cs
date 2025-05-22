@@ -1,0 +1,1 @@
+using Ardalis.Result;using KCloud.Auth.Models.DTO;using MediatR;namespace KCloud.Auth.Features.Authentication.Commands;public class LoginUserCommand : IRequest<Result<AuthResult>>{    public string Email { get; set; } = string.Empty;    public string Password { get; set; } = string.Empty;}

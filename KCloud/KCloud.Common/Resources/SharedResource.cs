@@ -1,0 +1,1 @@
+namespace KCloud.Common.Resources;public class SharedResource{    }

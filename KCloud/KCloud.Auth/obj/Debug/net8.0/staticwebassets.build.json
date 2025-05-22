@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "OHFe9fCjMhfy3f8GPEKceXPD5GfZNKwP4YmWwwrpt14=",
+  "Source": "KCloud.Auth",
+  "BasePath": "_content/KCloud.Auth",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

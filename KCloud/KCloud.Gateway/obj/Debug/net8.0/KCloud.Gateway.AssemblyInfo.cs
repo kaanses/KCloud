@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KCloud.Gateway")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+50f02024b824cb38682ece6f977d6517c67ddb73")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+09f6dd993a7d13d91a2c51489912ea2e8c61782e")]
 [assembly: System.Reflection.AssemblyProductAttribute("KCloud.Gateway")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KCloud.Gateway")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
