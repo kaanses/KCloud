@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KCloud.Auth")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+39deab537e8e7235ffda32ee5acbf3574e03a154")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+55978fd9700c8a3e2714038f92d6664e9767834e")]
 [assembly: System.Reflection.AssemblyProductAttribute("KCloud.Auth")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KCloud.Auth")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
