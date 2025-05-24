@@ -1,1 +1,0 @@
-namespace KCloud.FileStorage.Controllers;public class StorageController{    }
