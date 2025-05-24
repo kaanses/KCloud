@@ -1,0 +1,1 @@
+using Ardalis.Result;using KCloud.FileMetadata.Models.DTO;using MediatR;namespace KCloud.FileMetadata.Features.Files.Commands;public class UpdateFileMetadataCommand : IRequest<Result<FileMetadataDTO>>{    public Guid Id { get; set; }    public string? FileName { get; set; }    public Guid? FolderId { get; set; } }

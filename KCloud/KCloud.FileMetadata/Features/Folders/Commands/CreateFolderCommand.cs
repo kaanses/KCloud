@@ -1,0 +1,1 @@
+using Ardalis.Result;using KCloud.FileMetadata.Models.DTO;using MediatR;namespace KCloud.FileMetadata.Features.Folders.Commands;public class CreateFolderCommand : IRequest<Result<FolderDTO>>{    public string Name { get; set; }    public Guid UserId { get; set; }    public Guid? ParentFolderId { get; set; } }

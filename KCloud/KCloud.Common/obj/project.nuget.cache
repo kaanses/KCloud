@@ -1,9 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "qGX4fVK0n7zITguYXQOiP9itKWaoSysn4TftZAyo41psncdM5Yet8V/PNc1RGUhYedEX+kOPiRrC00sRE4SMUw==",
+  "dgSpecHash": "XFFiALg26lGJ+BOFl9J6wXq4iJrXyXNIwMZb8geYkklDtVfijr1CuV4Uj6K+dQjGNAq4XP6rOqVmWtu3+BB5ew==",
   "success": true,
   "projectFilePath": "/Users/kaanses/Desktop/Code/JT105BE-1/KCloud/KCloud/KCloud.Common/KCloud.Common.csproj",
   "expectedPackageFiles": [
+    "/Users/kaanses/.nuget/packages/ardalis.result/10.0.0/ardalis.result.10.0.0.nupkg.sha512",
+    "/Users/kaanses/.nuget/packages/fluentvalidation/11.2.1/fluentvalidation.11.2.1.nupkg.sha512",
+    "/Users/kaanses/.nuget/packages/fluentvalidation.aspnetcore/11.2.2/fluentvalidation.aspnetcore.11.2.2.nupkg.sha512",
+    "/Users/kaanses/.nuget/packages/fluentvalidation.dependencyinjectionextensions/11.2.1/fluentvalidation.dependencyinjectionextensions.11.2.1.nupkg.sha512",
     "/Users/kaanses/.nuget/packages/microsoft.data.sqlite.core/8.0.16/microsoft.data.sqlite.core.8.0.16.nupkg.sha512",
     "/Users/kaanses/.nuget/packages/microsoft.entityframeworkcore/8.0.16/microsoft.entityframeworkcore.8.0.16.nupkg.sha512",
     "/Users/kaanses/.nuget/packages/microsoft.entityframeworkcore.abstractions/8.0.16/microsoft.entityframeworkcore.abstractions.8.0.16.nupkg.sha512",
