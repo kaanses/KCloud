@@ -1,0 +1,1 @@
+namespace KCloud.FileMetadata.Models.DTO;public class FolderShareDTO{    public Guid SharedWithUserId { get; set; }    public string SharedWithUserName { get; set; } // Would need user service integration    public string Permission { get; set; }    public DateTime SharedAt { get; set; }    public DateTime? ExpiresAt { get; set; }    public bool IsActive { get; set; }}
