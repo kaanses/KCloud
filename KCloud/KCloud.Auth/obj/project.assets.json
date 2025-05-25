@@ -1667,7 +1667,8 @@
           "Ardalis.Result": "10.0.0",
           "FluentValidation.AspNetCore": "11.2.2",
           "Microsoft.EntityFrameworkCore.Sqlite": "8.0.16",
-          "Serilog.AspNetCore": "9.0.0"
+          "Serilog.AspNetCore": "9.0.0",
+          "Serilog.Settings.Configuration": "9.0.0"
         },
         "compile": {
           "bin/placeholder/KCloud.Common.dll": {}

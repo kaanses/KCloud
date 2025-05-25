@@ -86,3 +86,13 @@
 /Users/kaanses/Desktop/Code/JT105BE-1/KCloud/KCloud/KCloud.Gateway/obj/Debug/net8.0/KCloud.Gateway.pdb
 /Users/kaanses/Desktop/Code/JT105BE-1/KCloud/KCloud/KCloud.Gateway/obj/Debug/net8.0/KCloud.Gateway.genruntimeconfig.cache
 /Users/kaanses/Desktop/Code/JT105BE-1/KCloud/KCloud/KCloud.Gateway/obj/Debug/net8.0/ref/KCloud.Gateway.dll
+/Users/kaanses/Desktop/Code/JT105BE-1/KCloud/KCloud/KCloud.Gateway/bin/Debug/net8.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/kaanses/Desktop/Code/JT105BE-1/KCloud/KCloud/KCloud.Gateway/bin/Debug/net8.0/Microsoft.IdentityModel.Abstractions.dll
+/Users/kaanses/Desktop/Code/JT105BE-1/KCloud/KCloud/KCloud.Gateway/bin/Debug/net8.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/kaanses/Desktop/Code/JT105BE-1/KCloud/KCloud/KCloud.Gateway/bin/Debug/net8.0/Microsoft.IdentityModel.Logging.dll
+/Users/kaanses/Desktop/Code/JT105BE-1/KCloud/KCloud/KCloud.Gateway/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.dll
+/Users/kaanses/Desktop/Code/JT105BE-1/KCloud/KCloud/KCloud.Gateway/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/kaanses/Desktop/Code/JT105BE-1/KCloud/KCloud/KCloud.Gateway/bin/Debug/net8.0/Microsoft.IdentityModel.Tokens.dll
+/Users/kaanses/Desktop/Code/JT105BE-1/KCloud/KCloud/KCloud.Gateway/bin/Debug/net8.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/kaanses/Desktop/Code/JT105BE-1/KCloud/KCloud/KCloud.Gateway/bin/Debug/net8.0/System.IO.Hashing.dll
+/Users/kaanses/Desktop/Code/JT105BE-1/KCloud/KCloud/KCloud.Gateway/bin/Debug/net8.0/Yarp.ReverseProxy.dll

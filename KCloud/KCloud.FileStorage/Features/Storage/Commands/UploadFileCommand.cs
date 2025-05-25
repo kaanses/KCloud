@@ -1,0 +1,1 @@
+using Ardalis.Result;using KCloud.FileStorage.Models.DTO;using MediatR;namespace KCloud.FileStorage.Features.Storage.Commands;public class UploadFileCommand : IRequest<Result<UploadResponseDTO>>{    public IFormFile File { get; set; }    public Guid? FolderId { get; set; }}
