@@ -119,7 +119,7 @@
           "dependencies": {
             "Ardalis.Result": {
               "target": "Package",
-              "version": "[10.1.0, )"
+              "version": "[10.0.0, )"
             },
             "MediatR": {
               "target": "Package",

@@ -1,1 +1,1 @@
-// KCloud.Auth/Features/Authentication/Commands/LogoutCommand.csusing Ardalis.Result;using MediatR;namespace KCloud.Auth.Features.Authentication.Commands;public class LogoutCommand : IRequest<Result>{    public Guid UserId { get; set; }}
+using Ardalis.Result;using MediatR;namespace KCloud.Auth.Features.Authentication.Commands;public record LogoutCommand() : IRequest<Result>;

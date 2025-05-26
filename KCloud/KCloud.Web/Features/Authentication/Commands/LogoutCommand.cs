@@ -1,0 +1,1 @@
+using Ardalis.Result;using MediatR;namespace KCloud.Web.Features.Authentication.Commands;public class LogoutCommand : IRequest<Result>{}

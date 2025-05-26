@@ -1,0 +1,1 @@
+using Ardalis.Result;using KCloud.Web.Models.DTO;using MediatR;namespace KCloud.Web.Features.Files.Commands;public record SaveFileCommand(    IFormFile File,    Guid? FolderId = null) : IRequest<Result<FileMetadataDTO>>;

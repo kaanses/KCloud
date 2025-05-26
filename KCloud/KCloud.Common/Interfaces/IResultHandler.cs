@@ -1,0 +1,1 @@
+using Ardalis.Result;namespace KCloud.Common.Interfaces;public interface IResultHandler{    Microsoft.AspNetCore.Http.IResult HandleResult<T>(Result<T> result);    Microsoft.AspNetCore.Http.IResult HandleResult(Result result);}

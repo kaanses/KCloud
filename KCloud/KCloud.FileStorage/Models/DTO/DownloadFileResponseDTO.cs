@@ -1,0 +1,1 @@
+namespace KCloud.FileStorage.Models.DTO;public class DownloadFileResponseDTO{     public Stream FileStream { get; set; } = null!;}

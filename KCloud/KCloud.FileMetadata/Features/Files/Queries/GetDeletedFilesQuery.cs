@@ -1,1 +1,1 @@
-// KCloud.FileMetadata/Features/Files/Queries/GetDeletedFilesQuery.csusing Ardalis.Result;using KCloud.FileMetadata.Models.DTO;using MediatR;namespace KCloud.FileMetadata.Features.Files.Queries;public class GetDeletedFilesQuery : IRequest<Result<List<FileMetadataDTO>>>{    public string? SearchTerm { get; set; }}
+using Ardalis.Result;using KCloud.FileMetadata.Models.DTO;using MediatR;namespace KCloud.FileMetadata.Features.Files.Queries;public class GetDeletedFilesQuery : IRequest<Result<List<FileMetadataDTO>>>{    public string? SearchTerm { get; set; }}

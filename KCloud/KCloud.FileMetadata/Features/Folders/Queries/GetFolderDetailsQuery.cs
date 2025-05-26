@@ -1,1 +1,1 @@
-using Ardalis.Result;using KCloud.FileMetadata.Models.DTO;using MediatR;namespace KCloud.FileMetadata.Features.Folders.Queries;public class GetFolderDetailsQuery : IRequest<Result<FolderDetailsDTO>>{    public Guid Id { get; set; }}
+using Ardalis.Result;using KCloud.FileMetadata.Models.DTO;using MediatR;namespace KCloud.FileMetadata.Features.Folders.Queries;public record GetFolderDetailsQuery(    Guid Id) : IRequest<Result<FolderDetailsDTO>>;

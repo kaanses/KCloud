@@ -1,0 +1,1 @@
+using Ardalis.Result;using KCloud.Web.Models.DTO;using MediatR;namespace KCloud.Web.Features.Files.Commands;public record CreateFileMetadataCommand(    Guid Id,    string FileName,    string ContentType,    long FileSizeBytes,    Guid? FolderId,    string StoragePath,    DateTime UploadedAt) : IRequest<Result<FileMetadataDTO>>;

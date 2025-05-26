@@ -1,1 +1,1 @@
-using Ardalis.Result;using KCloud.FileStorage.Models.DTO;using MediatR;namespace KCloud.FileStorage.Features.Storage.Queries;public class DownloadFileQuery :  IRequest<Result<DownloadFileResponse>>{    public Guid FileId { get; set; }}
+using Ardalis.Result;using KCloud.FileStorage.Models.DTO;using MediatR;namespace KCloud.FileStorage.Features.Storage.Queries;public class DownloadFileQuery :  IRequest<Result<DownloadFileResponseDTO>>{     public Guid FileId { get; set; }}

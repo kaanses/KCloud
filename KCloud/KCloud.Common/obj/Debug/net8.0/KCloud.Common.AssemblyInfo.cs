@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KCloud.Common")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+034dc8f08ffe52bf4e8186f5fe2b97dfea4c6d50")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c9bc93931737d8bb76db7ab919d808ea324107af")]
 [assembly: System.Reflection.AssemblyProductAttribute("KCloud.Common")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KCloud.Common")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net8.0": {
-      "Ardalis.Result/10.1.0": {
+      "Ardalis.Result/10.0.0": {
         "type": "package",
         "compile": {
           "lib/net8.0/Ardalis.Result.dll": {}
@@ -1094,14 +1094,14 @@
     }
   },
   "libraries": {
-    "Ardalis.Result/10.1.0": {
-      "sha512": "+WgsXh+JRm0d8BZPlBUc5w0+FTda4vbWRa/IF2q4zDoRsU5BXr8w4rTbYEklZIMNgQQZTcNouR/QfBV5I/4XYQ==",
+    "Ardalis.Result/10.0.0": {
+      "sha512": "JCUSQl+9dbL7kUltUpFmUeBTnC89fEDEtjIhLZTKymeV9DeWjfxdFhN+vmrKARqzOluH/eyxbUoA6mKqctEzFQ==",
       "type": "package",
-      "path": "ardalis.result/10.1.0",
+      "path": "ardalis.result/10.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "ardalis.result.10.1.0.nupkg.sha512",
+        "ardalis.result.10.0.0.nupkg.sha512",
         "ardalis.result.nuspec",
         "icon.png",
         "lib/net6.0/Ardalis.Result.dll",
@@ -2780,7 +2780,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "Ardalis.Result >= 10.1.0",
+      "Ardalis.Result >= 10.0.0",
       "KCloud.Common >= 1.0.0",
       "MediatR >= 12.5.0",
       "MediatR.Contracts >= 2.0.1",
@@ -2836,7 +2836,7 @@
         "dependencies": {
           "Ardalis.Result": {
             "target": "Package",
-            "version": "[10.1.0, )"
+            "version": "[10.0.0, )"
           },
           "MediatR": {
             "target": "Package",

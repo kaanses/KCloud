@@ -1,0 +1,1 @@
+namespace KCloud.Web.Models.DTO;public class UserFilesResponseDTO{    public List<FileMetadataDTO> Files { get; set; } = new();    public List<FolderDTO> Folders { get; set; } = new();    public int TotalFiles { get; set; }    public int TotalFolders { get; set; }    public string? CurrentFolderPath { get; set; }}

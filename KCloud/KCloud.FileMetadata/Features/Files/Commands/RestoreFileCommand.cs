@@ -1,1 +1,1 @@
-using Ardalis.Result;using MediatR;namespace KCloud.FileMetadata.Features.Files.Commands;public class RestoreFileCommand : IRequest<Result>{    public Guid Id { get; set; }}
+using Ardalis.Result;using MediatR;namespace KCloud.FileMetadata.Features.Files.Commands;public record RestoreFileCommand(Guid Id) : IRequest<Result>;

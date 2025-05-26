@@ -1,1 +1,1 @@
-// KCloud.Auth/Features/Authentication/Queries/GetCurrentUserQuery.csusing Ardalis.Result;using KCloud.Auth.Models.DTO;using MediatR;namespace KCloud.Auth.Features.Authentication.Queries;public class GetCurrentUserQuery : IRequest<Result<UserDTO>>{    public Guid UserId { get; set; }}
+using Ardalis.Result;using KCloud.Auth.Models.DTO;using MediatR;namespace KCloud.Auth.Features.Authentication.Queries;public record GetCurrentUserQuery() : IRequest<Result<UserDTO>>;
