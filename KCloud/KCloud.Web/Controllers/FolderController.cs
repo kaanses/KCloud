@@ -1,1 +1,0 @@
-namespace KCloud.Web.Controllers;public class FolderController{    }
