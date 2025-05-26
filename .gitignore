@@ -25,3 +25,4 @@ obj/
 
 # Runtime files
 *.runtimeconfig.json
+KCloud/KCloud.FileStorage/Storage/
