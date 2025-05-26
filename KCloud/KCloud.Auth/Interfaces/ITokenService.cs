@@ -1,0 +1,1 @@
+using System.Security.Claims;using KCloud.Auth.Models.DTO;namespace KCloud.Auth.Interfaces;public interface ITokenService{    string GenerateJwtToken(UserDTO user);    string GenerateRefreshToken();    ClaimsPrincipal ValidateToken(string token);    Guid? GetUserId(ClaimsPrincipal principal);}

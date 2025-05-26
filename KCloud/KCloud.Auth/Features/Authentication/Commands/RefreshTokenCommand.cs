@@ -1,0 +1,1 @@
+using Ardalis.Result;using KCloud.Auth.Models.DTO;using MediatR;namespace KCloud.Auth.Features.Authentication.Commands;public class RefreshTokenCommand : IRequest<Result<AuthResult>>{    public string AccessToken { get; set; } = string.Empty;    public string RefreshToken { get; set; } = string.Empty;}

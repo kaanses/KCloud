@@ -1,0 +1,1 @@
+namespace KCloud.Auth.Models.Entity;public class RefreshToken{    public int Id { get; set; }    public DateTime ExpiryTime { get; set; }    public required string Token { get; set; }    public Guid UserId { get; set; }    public User? User { get; set; }}

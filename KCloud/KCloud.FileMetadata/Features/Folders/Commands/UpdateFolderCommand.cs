@@ -1,0 +1,1 @@
+using Ardalis.Result;using KCloud.FileMetadata.Models.DTO;using MediatR;namespace KCloud.FileMetadata.Features.Folders.Commands;public record UpdateFolderCommand(    Guid Id,    string? Name,    Guid UserId,    Guid? DestinationFolderId = null,    Guid? ParentFolderId = null) : IRequest<Result<FolderDTO>>;

@@ -1,0 +1,1 @@
+using Ardalis.Result;using MediatR;namespace KCloud.FileMetadata.Features.Folders.Commands;public record DeleteFolderCommand(    Guid Id,    bool DeleteContents = false) : IRequest<Result>;

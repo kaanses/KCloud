@@ -1,0 +1,1 @@
+using Ardalis.Result;namespace KCloud.Web.Interfaces;public interface IParseServerResponseService{    Task<Result<T>> ParseSuccessResponse<T>(string responseContent);    Task<Result<T>> ParseErrorResponse<T>(string responseContent, int statusCode);}

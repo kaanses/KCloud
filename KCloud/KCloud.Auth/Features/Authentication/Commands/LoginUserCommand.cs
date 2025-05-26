@@ -1,0 +1,1 @@
+using Ardalis.Result;using KCloud.Auth.Models.DTO;using MediatR;namespace KCloud.Auth.Features.Authentication.Commands;public record LoginUserCommand(    string Email,    string Password) : IRequest<Result<AuthResult>>;

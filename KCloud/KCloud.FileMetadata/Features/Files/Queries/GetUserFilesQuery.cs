@@ -1,0 +1,1 @@
+using Ardalis.Result;using KCloud.FileMetadata.Models.DTO;using MediatR;namespace KCloud.FileMetadata.Features.Files.Queries;public record GetUserFilesQuery(    Guid? FolderId = null,     string? SearchTerm = null,     bool IsSharedWithMeFolder = false) : IRequest<Result<UserFilesResponse>>;

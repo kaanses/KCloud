@@ -1,0 +1,1 @@
+using Ardalis.Result;using MediatR;namespace KCloud.Web.Features.Files.Queries;public record GetFileQuery(    Guid FileId) : IRequest<Result<Stream>>;

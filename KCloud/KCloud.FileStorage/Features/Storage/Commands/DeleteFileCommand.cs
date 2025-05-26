@@ -1,0 +1,1 @@
+using Ardalis.Result;using MediatR;namespace KCloud.FileStorage.Features.Storage.Commands;public class DeleteFileCommand : IRequest<Result>{    public Guid FileId { get; set; }}
