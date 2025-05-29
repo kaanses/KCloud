@@ -15,6 +15,7 @@ obj/
 *.user
 *.suo
 *.sln.DotSettings.user
+*.xml
 
 # Database files
 *.db
