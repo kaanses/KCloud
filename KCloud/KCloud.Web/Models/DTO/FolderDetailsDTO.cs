@@ -1,1 +1,1 @@
-namespace KCloud.Web.Models.DTO;public class GetFolderDetailsDTO{    }
+namespace KCloud.Web.Models.DTO;public class FolderDetailsDTO{    public Guid Id { get; set; }    public string Name { get; set; }    public Guid UserId { get; set; }    public Guid? ParentFolderId { get; set; }    public DateTime CreatedAt { get; set; }    public DateTime LastAccessedAt { get; set; }        public string BreadcrumbPath { get; set; }    public int FileCount { get; set; }    public int SubFolderCount { get; set; }    public long TotalSizeBytes { get; set; }    }

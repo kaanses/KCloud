@@ -1,1 +1,1 @@
-namespace KCloud.Web.Features.Folders.Commands;public class DeleteFolderCommand{    }
+using Ardalis.Result;using MediatR;namespace KCloud.Web.Features.Folders.Commands;public record DeleteFolderCommand(    Guid Id,    bool DeleteContents = false,    bool MoveContentsToParent = false,    bool MoveContentsToRoot = false) : IRequest<Result>;

@@ -1,1 +1,1 @@
-namespace KCloud.FileMetadata.Interfaces;public interface IFolderDeleteService{    }
+using KCloud.FileMetadata.Models.Entity;namespace KCloud.FileMetadata.Interfaces;public interface IFolderDeleteService{    Task<List<Guid>> DeleteAllContentRecursivelyAsync(Folder folder, CancellationToken cancellationToken = default);    Task MoveContentToParentAsync(Folder folder, CancellationToken cancellationToken = default);    Task MoveContentToRootAsync(Folder folder, CancellationToken cancellationToken = default);}

@@ -1,1 +1,1 @@
-namespace KCloud.Web.Features.Authentication.Commands;public class RefreshTokenCommand{    }
+using Ardalis.Result;using KCloud.Web.Models.DTO;using MediatR;namespace KCloud.Web.Features.Authentication.Commands;public record RefreshTokenCommand : IRequest<Result<AuthResponseDTO>>;

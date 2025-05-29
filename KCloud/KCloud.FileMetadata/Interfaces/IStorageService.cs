@@ -1,1 +1,1 @@
-namespace KCloud.FileMetadata.Interfaces;public class IStorageService{    }
+namespace KCloud.FileMetadata.Interfaces;public interface IStorageService{    Task<string> GenerateStoragePathAsync(Guid userId, string fileName, Guid? folderId, CancellationToken cancellationToken = default);    string SanitizeFileName(string fileName);    bool IsValidFileName(string fileName);    Task<string> BuildFolderPathAsync(Guid? folderId, CancellationToken cancellationToken);}

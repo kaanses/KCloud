@@ -1,1 +1,1 @@
-namespace KCloud.FileMetadata.Models.DTO;public class DeleteFolderResponseDTO{    }
+namespace KCloud.FileMetadata.Models.DTO;public class DeleteFolderResponseDTO{    public bool Success { get; set; }    public string Message { get; set; } = string.Empty;    public List<Guid> DeletedFileIds { get; set; } = new();    public int DeletedFileCount { get; set; }    public int DeletedFolderCount { get; set; }}

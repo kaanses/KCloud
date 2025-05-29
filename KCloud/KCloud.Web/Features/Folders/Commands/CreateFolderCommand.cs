@@ -1,1 +1,1 @@
-namespace KCloud.Web.Features.Files.Commands;public class CreateFolderCommand{    }
+using Ardalis.Result;using KCloud.Web.Models.DTO;using MediatR;namespace KCloud.Web.Features.Folders.Commands;public record CreateFolderCommand(    string Name,    Guid? ParentFolderId = null) : IRequest<Result<FolderDTO>>;

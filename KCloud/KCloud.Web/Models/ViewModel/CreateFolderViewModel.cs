@@ -1,1 +1,1 @@
-namespace KCloud.Web.Models.ViewModel;public class CreateFolderViewModel{    }
+namespace KCloud.Web.Models.ViewModel;public class CreateFolderViewModel{    public string Name { get; set; }     public Guid? ParentFolderId { get; set; }}

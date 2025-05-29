@@ -1,1 +1,1 @@
-namespace KCloud.Web.Models.ViewModel;public class DeleteFileViewModel{    public Guid Id { get; set; }    public bool DeleteContents { get; set; } = false;}
+namespace KCloud.Web.Models.ViewModel;public class DeleteFolderViewModel{    public Guid Id { get; set; }    public bool DeleteContents { get; set; }    public bool MoveContentsToParent { get; set; }    public bool MoveContentsToRoot { get; set; }}
