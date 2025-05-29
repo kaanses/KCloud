@@ -1,0 +1,1 @@
+namespace KCloud.Web.Features.Files.Queries;public class GetDeletedFilesQuery{    }

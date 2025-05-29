@@ -1,1 +1,1 @@
-using Ardalis.Result;using KCloud.Web.Models.DTO;using MediatR;namespace KCloud.Web.Features.Files.Commands;public record UpdateFileCommand(    Guid Id,    string FileName,    Guid? FolderId = null) : IRequest<Result<FileMetadataDTO>>;
+using Ardalis.Result;using KCloud.Web.Models.DTO;using MediatR;namespace KCloud.Web.Features.Files.Commands;public record UpdateFileCommand(    Guid Id,    string FileName,    Guid? FolderId ) : IRequest<Result<FileMetadataDTO>>;

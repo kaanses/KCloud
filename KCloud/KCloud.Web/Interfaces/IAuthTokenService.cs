@@ -1,0 +1,1 @@
+namespace KCloud.Web.Interfaces;public interface IAuthTokenService{    void StoreTokens(string accessToken, string refreshToken);    string? GetAccessToken();    string? GetRefreshToken();    void ClearTokens();}
