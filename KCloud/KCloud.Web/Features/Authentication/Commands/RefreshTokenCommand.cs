@@ -1,0 +1,1 @@
+namespace KCloud.Web.Features.Authentication.Commands;public class RefreshTokenCommand{    }

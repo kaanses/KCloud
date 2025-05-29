@@ -1,0 +1,1 @@
+namespace KCloud.Web.Features.Folders.Commands;public class DeleteFolderCommand{    }

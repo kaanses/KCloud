@@ -1,0 +1,1 @@
+namespace KCloud.FileMetadata.Interfaces;public class IStorageService{    }

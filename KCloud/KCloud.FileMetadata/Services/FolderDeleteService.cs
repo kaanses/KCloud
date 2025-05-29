@@ -1,0 +1,1 @@
+namespace KCloud.FileMetadata.Services;public class FolderDeleteService{    }

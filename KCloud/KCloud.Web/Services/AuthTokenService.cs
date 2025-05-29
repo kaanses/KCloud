@@ -1,0 +1,1 @@
+namespace KCloud.Web.Services;public class IAuthTokenService{    }

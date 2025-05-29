@@ -1,0 +1,1 @@
+namespace KCloud.Web.Models.ViewModel;public class UpdateFolderViewModel{    }

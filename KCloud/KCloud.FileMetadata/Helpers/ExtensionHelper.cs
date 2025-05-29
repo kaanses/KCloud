@@ -1,0 +1,1 @@
+namespace KCloud.FileMetadata.Helpers;public class ExtensionHelper{    }

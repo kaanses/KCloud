@@ -1,0 +1,1 @@
+namespace KCloud.Web.Features.Folders.QueryHandlers;public class GetFolderDetailsQueryHandlers{    }

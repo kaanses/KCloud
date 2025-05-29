@@ -1,0 +1,1 @@
+namespace KCloud.Web.Features.Files.Commands;public class CreateFolderCommand{    }

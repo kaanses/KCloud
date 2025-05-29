@@ -1,0 +1,1 @@
+namespace KCloud.Web.Models.DTO;public class DeleteFolderResponseDTO{    }

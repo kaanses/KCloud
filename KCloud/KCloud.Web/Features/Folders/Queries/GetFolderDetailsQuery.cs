@@ -1,0 +1,1 @@
+namespace KCloud.Web.Features.Folders.Queries;public class GetDetailsQuery{    }
