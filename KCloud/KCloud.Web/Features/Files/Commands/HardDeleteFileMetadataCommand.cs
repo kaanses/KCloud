@@ -1,0 +1,1 @@
+using Ardalis.Result;using KCloud.Web.Models.DTO;using MediatR;namespace KCloud.Web.Features.Files.Commands;public record HardDeleteFileMetadataCommand(    Guid? FileId = null,    bool EmptyTrash = false) : IRequest<Result<HardDeleteResultDTO>>;
