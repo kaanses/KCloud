@@ -1,0 +1,1 @@
+namespace KCloud.Web.Models.Enum;public enum FilePermission{    Read = 1,    Write = 2,    Delete = 3,    FullAccess = 4}

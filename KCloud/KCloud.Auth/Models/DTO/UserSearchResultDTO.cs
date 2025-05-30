@@ -1,0 +1,1 @@
+namespace KCloud.Auth.Models.DTO;public class UserSearchResultDTO{    public Guid Id { get; set; }    public string Username { get; set; } = string.Empty;}
