@@ -1,0 +1,1 @@
+using Ardalis.Result;using KCloud.Auth.Models.DTO;using MediatR;namespace KCloud.Auth.Features.Authentication.Queries;public record SearchUsersQuery(    string SearchTerm,    int MaxResults = 10) : IRequest<Result<List<UserSearchResultDTO>>>;
