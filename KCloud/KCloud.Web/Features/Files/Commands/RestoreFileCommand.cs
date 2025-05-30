@@ -1,0 +1,1 @@
+using Ardalis.Result;using MediatR;namespace KCloud.Web.Features.Files.Commands;public record RestoreFileCommand(    Guid? Id = null,    bool RestoreAll = false) : IRequest<Result>;

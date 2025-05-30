@@ -1,1 +1,1 @@
-using Ardalis.Result;using MediatR;namespace KCloud.FileMetadata.Features.Files.Commands;public record DeleteFileMetadataCommand(Guid Id, bool HardDelete = false) : IRequest<Result>;
+using Ardalis.Result;using MediatR;namespace KCloud.FileMetadata.Features.Files.Commands;public record DeleteFileMetadataCommand(Guid Id) : IRequest<Result>;
