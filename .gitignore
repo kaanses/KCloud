@@ -27,3 +27,5 @@ obj/
 # Runtime files
 *.runtimeconfig.json
 KCloud/KCloud.FileStorage/Storage/
+.DS_Store
+.idea/

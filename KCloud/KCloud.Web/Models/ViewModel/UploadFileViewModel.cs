@@ -1,1 +1,1 @@
-using System.ComponentModel.DataAnnotations;namespace KCloud.Web.Models.ViewModel;public class UploadFileViewModel{    [Required(ErrorMessage = "Please select a file")]    public IFormFile? File { get; set; }    public Guid? FolderId { get; set; }}
+using System.ComponentModel.DataAnnotations;namespace KCloud.Web.Models.ViewModel;public class UploadFileViewModel{    [Required(ErrorMessage = "Please select a file")]    public IFormFile File { get; set; }    public Guid? FolderId { get; set; }}

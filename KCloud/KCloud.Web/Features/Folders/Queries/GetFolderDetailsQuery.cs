@@ -1,0 +1,1 @@
+using Ardalis.Result;using KCloud.Web.Models.DTO;using MediatR;namespace KCloud.Web.Features.Folders.Queries;public record GetFolderDetailsQuery(    Guid Id) : IRequest<Result<FolderDetailsDTO>>;

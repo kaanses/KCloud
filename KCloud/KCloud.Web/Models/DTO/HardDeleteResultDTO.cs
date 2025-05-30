@@ -1,0 +1,1 @@
+namespace KCloud.Web.Models.DTO;public record HardDeleteResultDTO(List<Guid> DeletedFileIds);

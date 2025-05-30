@@ -1,0 +1,1 @@
+namespace KCloud.Web.Models.ViewModel;public class UpdateFolderViewModel{    public Guid Id { get; set; }    public string? Name { get; set; }    public Guid? ParentFolderId { get; set; }}
