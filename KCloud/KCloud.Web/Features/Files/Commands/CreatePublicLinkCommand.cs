@@ -1,0 +1,1 @@
+using Ardalis.Result;using KCloud.Web.Models.DTO;using KCloud.Web.Models.Enum;using MediatR;namespace KCloud.Web.Features.Files.Commands;public record CreatePublicLinkCommand(    Guid FileId,    FilePermission Permission,    DateTime? ExpiresAt = null) : IRequest<Result<FileShareDTO>>;
