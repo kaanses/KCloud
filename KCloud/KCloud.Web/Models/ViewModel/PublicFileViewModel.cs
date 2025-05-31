@@ -1,0 +1,1 @@
+using KCloud.Web.Models.DTO;namespace KCloud.Web.Models.ViewModel;public class PublicFileViewModel{    public FileMetadataDTO File { get; set; } = new();    public string PublicToken { get; set; } = string.Empty;}

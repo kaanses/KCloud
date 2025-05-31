@@ -74,7 +74,7 @@ namespace KCloud.FileMetadata.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Files");
+                    b.ToTable("Files", (string)null);
                 });
 
             modelBuilder.Entity("KCloud.FileMetadata.Models.Entity.FileShare", b =>
@@ -133,7 +133,7 @@ namespace KCloud.FileMetadata.Migrations
 
                     b.HasIndex("SharedWithUserId");
 
-                    b.ToTable("FileShares");
+                    b.ToTable("FileShares", (string)null);
                 });
 
             modelBuilder.Entity("KCloud.FileMetadata.Models.Entity.Folder", b =>
@@ -180,7 +180,7 @@ namespace KCloud.FileMetadata.Migrations
                         .HasDatabaseName("IX_Folders_Unique_Name_Per_User_Parent")
                         .HasFilter("\"IsDeleted\" = false");
 
-                    b.ToTable("Folders");
+                    b.ToTable("Folders", (string)null);
                 });
 
             modelBuilder.Entity("KCloud.FileMetadata.Models.Entity.FileMetadata", b =>

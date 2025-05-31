@@ -1,0 +1,1 @@
+using Ardalis.Result;using KCloud.Web.Models.DTO;using MediatR;namespace KCloud.Web.Features.Files.Queries;public record GetFileByPublicLinkQuery(string PublicToken) : IRequest<Result<FileMetadataDTO>>;

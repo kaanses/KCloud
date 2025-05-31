@@ -1,1 +1,1 @@
-// KCloud.Web/Features/Files/Queries/DownloadFileQuery.csusing Ardalis.Result;using KCloud.Web.Models.DTO;using MediatR;namespace KCloud.Web.Features.Files.Queries;public record DownloadFileQuery(    Guid FileId) : IRequest<Result<FileDownloadResponseDTO>>;
+// KCloud.Web/Features/Files/Queries/DownloadFileQuery.csusing Ardalis.Result;using KCloud.Web.Models.DTO;using MediatR;namespace KCloud.Web.Features.Files.Queries;public record DownloadFileQuery(    Guid FileId,    bool IsPublicAccess = false) : IRequest<Result<FileDownloadResponseDTO>>;
