@@ -1,1 +1,1 @@
-using Ardalis.Result;using MediatR;namespace KCloud.Web.Features.Files.Commands;public record DeleteFileCommand(    Guid Id,    bool HardDelete = false) : IRequest<Result>;
+using Ardalis.Result;using MediatR;namespace KCloud.Web.Features.Files.Commands;public record DeleteFileCommand(    Guid Id,    bool HardDelete ) : IRequest<Result>;

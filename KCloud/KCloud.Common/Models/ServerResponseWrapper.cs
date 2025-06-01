@@ -1,0 +1,1 @@
+namespace KCloud.Common.Models;public class ServerResponseWrapper<T>{    public T Data { get; set; } = default!;    public string? Message { get; set; }}

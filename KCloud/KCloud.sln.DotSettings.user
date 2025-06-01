@@ -4,4 +4,5 @@
 	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=src_002FCommon_002FKCloud_002ECommon_002FResources_002FSharedResource_00202/@EntryIndexRemoved">True</s:Boolean>
 	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=src_002FCommon_002FKCloud_002ECommon_002FResources_002FSharedResource_002Etr_002DTR_00202/@EntryIndexedValue">False</s:Boolean>
 	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=src_002FCommon_002FKCloud_002ECommon_002FResources_002FSharedResource_002Etr_002DTR_00202/@EntryIndexRemoved">True</s:Boolean>
-	<s:Boolean x:Key="/Default/ResxEditorPersonal/Initialized/@EntryValue">True</s:Boolean></wpf:ResourceDictionary>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/Initialized/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/ShowOnlyErrors/@EntryValue">False</s:Boolean></wpf:ResourceDictionary>
