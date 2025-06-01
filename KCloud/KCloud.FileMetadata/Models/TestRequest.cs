@@ -1,0 +1,1 @@
+namespace KCloud.FileMetadata.Models;public record TestRequest(string Name);
