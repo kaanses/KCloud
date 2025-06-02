@@ -1,1 +1,1 @@
-using KCloud.Web.Models.Enum;namespace KCloud.Web.Models.ViewModel;public class ShareFileViewModel{    public Guid FileId { get; set; }    public List<Guid> UserIds { get; set; } = new();    public string Permission { get; set; }     public DateTime? ExpiresAt { get; set; }}
+namespace KCloud.Web.Models.ViewModel;public class ShareFileViewModel{    public Guid FileId { get; set; }    public List<Guid> UserIds { get; set; } = new();    public string Permission { get; set; }     public DateTime? ExpiresAt { get; set; }}
