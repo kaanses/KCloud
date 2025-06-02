@@ -1,0 +1,1 @@
+using KCloud.Web.Models.Enum;namespace KCloud.Web.Models.ViewModel;public class CreatePublicLinkViewModel{public Guid FileId { get; set; }public FilePermission Permission { get; set; }public DateTime? ExpiresAt { get; set; }}

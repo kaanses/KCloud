@@ -1,1 +1,0 @@
-using Ardalis.Result;using MediatR;namespace KCloud.Web.Features.Files.CommandHandlers;public record EmptyTrashCommand() : IRequest<Result>;

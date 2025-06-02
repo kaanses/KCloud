@@ -1,1 +1,1 @@
-namespace KCloud.Web.Interfaces;public interface ITokenRefreshService{    Task<bool> RefreshTokenAsync();    string? GetJwtToken();    string? GetRefreshToken();}
+namespace KCloud.Web.Interfaces;public interface ITokenRefreshService{    Task<bool> RefreshTokenAsync();    string? GetRefreshToken();}
