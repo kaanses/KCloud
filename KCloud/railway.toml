@@ -36,7 +36,7 @@ restartPolicyType = "never"
 
 [environments.gateway.variables]
 ASPNETCORE_ENVIRONMENT = "Production"
-Auth__Url = "auth.railway.internal"
+Auth__Url = "http://auth.railway.internal"
 FileStorage__Url = "http://filestorage.railway.internal"
 FileMetadata__Url = "http://filemetadata.railway.internal"
 JWT__Key = "13f975f45c32948d5ab2e2a29d53d6a56b9569a9c8f8cd75d2e456ee7dedb69ee19836d25081c2c11880d58e4d494eb3010fecccabdb9ffa82b50d1b43f47641"
