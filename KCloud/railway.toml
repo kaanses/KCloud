@@ -1,12 +1,10 @@
-# Railway configuration for KCloud microservices
+[build]
+builder = "dockerfile"
+dockerfilePath = "KCloud/KCloud.Web/Dockerfile"
 
-# Web Service
-[environments.production.services.web]
-build.builder = "dockerfile"
-build.dockerfilePath = "KCloud/KCloud.Web/Dockerfile"
-build.watchPatterns = ["KCloud/KCloud.Web/**"]
-deploy.startCommand = ""
-deploy.restartPolicyType = "never"
+[deploy]
+startCommand = ""
+restartPolicyType = "never"
 
 [environments.production.services.web.variables]
 ASPNETCORE_ENVIRONMENT = "Production"
