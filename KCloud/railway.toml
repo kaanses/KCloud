@@ -1,8 +1,66 @@
-[build]
-builder = "dockerfile"
-dockerfilePath = "KCloud/KCloud.Web/Dockerfile"
-watchPatterns = ["KCloud/KCloud.Web/**"]
+# Railway configuration for KCloud microservices
 
-[deploy]
-startCommand = ""
-restartPolicyType = "never"
+# Web Service
+[environments.production.services.web]
+build.builder = "dockerfile"
+build.dockerfilePath = "KCloud/KCloud.Web/Dockerfile"
+build.watchPatterns = ["KCloud/KCloud.Web/**"]
+deploy.startCommand = ""
+deploy.restartPolicyType = "never"
+
+[environments.production.services.web.variables]
+ASPNETCORE_ENVIRONMENT = "Production"
+FileMetadata__Url = "https://${{RAILWAY_SERVICE_NAME}}-filemetadata-production.up.railway.app"
+FileStorage__Url = "https://${{RAILWAY_SERVICE_NAME}}-filestorage-production.up.railway.app"
+Auth__Url = "https://${{RAILWAY_SERVICE_NAME}}-auth-production.up.railway.app"
+JWT__Key = "13f975f45c32948d5ab2e2a29d53d6a56b9569a9c8f8cd75d2e456ee7dedb69ee19836d25081c2c11880d58e4d494eb3010fecccabdb9ffa82b50d1b43f47641"
+
+# Auth Service
+[environments.production.services.auth]
+build.builder = "dockerfile"
+build.dockerfilePath = "KCloud/KCloud.Auth/Dockerfile"
+build.watchPatterns = ["KCloud/KCloud.Auth/**"]
+deploy.startCommand = ""
+deploy.restartPolicyType = "never"
+
+[environments.production.services.auth.variables]
+ASPNETCORE_ENVIRONMENT = "Production"
+SQLite__DBPath = "/app/data/auth.db"
+JWT__Key = "13f975f45c32948d5ab2e2a29d53d6a56b9569a9c8f8cd75d2e456ee7dedb69ee19836d25081c2c11880d58e4d494eb3010fecccabdb9ffa82b50d1b43f47641"
+
+# Gateway Service
+[environments.production.services.gateway]
+build.builder = "dockerfile"
+build.dockerfilePath = "KCloud/KCloud.Gateway/Dockerfile"
+build.watchPatterns = ["KCloud/KCloud.Gateway/**"]
+deploy.startCommand = ""
+deploy.restartPolicyType = "never"
+
+[environments.production.services.gateway.variables]
+ASPNETCORE_ENVIRONMENT = "Production"
+
+# FileStorage Service
+[environments.production.services.filestorage]
+build.builder = "dockerfile"
+build.dockerfilePath = "KCloud/KCloud.FileStorage/Dockerfile"
+build.watchPatterns = ["KCloud/KCloud.FileStorage/**"]
+deploy.startCommand = ""
+deploy.restartPolicyType = "never"
+
+[environments.production.services.filestorage.variables]
+ASPNETCORE_ENVIRONMENT = "Production"
+Storage__Path = "/app/files"
+JWT__Key = "13f975f45c32948d5ab2e2a29d53d6a56b9569a9c8f8cd75d2e456ee7dedb69ee19836d25081c2c11880d58e4d494eb3010fecccabdb9ffa82b50d1b43f47641"
+
+# FileMetadata Service
+[environments.production.services.filemetadata]
+build.builder = "dockerfile"
+build.dockerfilePath = "KCloud/KCloud.FileMetadata/Dockerfile"
+build.watchPatterns = ["KCloud/KCloud.FileMetadata/**"]
+deploy.startCommand = ""
+deploy.restartPolicyType = "never"
+
+[environments.production.services.filemetadata.variables]
+ASPNETCORE_ENVIRONMENT = "Production"
+ConnectionStrings__FileMetadataDB = "${{Postgres.DATABASE_URL}}"
+JWT__Key = "13f975f45c32948d5ab2e2a29d53d6a56b9569a9c8f8cd75d2e456ee7dedb69ee19836d25081c2c11880d58e4d494eb3010fecccabdb9ffa82b50d1b43f47641"
