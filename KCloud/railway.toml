@@ -1,8 +1,47 @@
-[build]
+# Multi-environment Railway configuration
+
+# Web Service Environment
+[environments.web]
+[environments.web.build]
 builder = "dockerfile"
 dockerfilePath = "KCloud/KCloud.Web/Dockerfile"
+[environments.web.deploy]
+startCommand = ""
+restartPolicyType = "never"
 
-[deploy]
+# Auth Service Environment  
+[environments.auth]
+[environments.auth.build]
+builder = "dockerfile"
+dockerfilePath = "KCloud/KCloud.Auth/Dockerfile"
+[environments.auth.deploy]
+startCommand = ""
+restartPolicyType = "never"
+
+# FileStorage Service Environment
+[environments.filestorage]
+[environments.filestorage.build]
+builder = "dockerfile"
+dockerfilePath = "KCloud/KCloud.FileStorage/Dockerfile"
+[environments.filestorage.deploy]
+startCommand = ""
+restartPolicyType = "never"
+
+# FileMetadata Service Environment
+[environments.filemetadata]
+[environments.filemetadata.build]
+builder = "dockerfile"
+dockerfilePath = "KCloud/KCloud.FileMetadata/Dockerfile"
+[environments.filemetadata.deploy]
+startCommand = ""
+restartPolicyType = "never"
+
+# Gateway Service Environment
+[environments.gateway]
+[environments.gateway.build]
+builder = "dockerfile"
+dockerfilePath = "KCloud/KCloud.Gateway/Dockerfile"
+[environments.gateway.deploy]
 startCommand = ""
 restartPolicyType = "never"
 
