@@ -1,6 +1,8 @@
 [build]
 builder = "dockerfile"
-dockerfilePath = "KCloud.Web/Dockerfile"
+dockerfilePath = "KCloud/KCloud.Web/Dockerfile"
+watchPatterns = ["KCloud/KCloud.Web/**"]
 
 [deploy]
 startCommand = ""
+restartPolicyType = "never"
