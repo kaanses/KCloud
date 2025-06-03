@@ -9,46 +9,48 @@ services:
       - postgres-data:/var/lib/postgresql/data
     ports:
       - "5432:5432"
-
+      
   filestorage:
-    build:
-      context: .
-      dockerfile: KCloud.FileStorage/Dockerfile
+    image: mcr.microsoft.com/dotnet/sdk:8.0
     environment:
       ASPNETCORE_ENVIRONMENT: Development
       Storage__Path: /app/files
       JWT__Key: "13f975f45c32948d5ab2e2a29d53d6a56b9569a9c8f8cd75d2e456ee7dedb69ee19836d25081c2c11880d58e4d494eb3010fecccabdb9ffa82b50d1b43f47641"
     volumes:
       - file-storage:/app/files
+      - .:/src
+    working_dir: /src/KCloud.FileStorage
+    command: ["dotnet", "watch", "run", "--urls", "http://0.0.0.0:8080"]
     ports:
       - "5002:8080"
-
+      
   auth:
-    build:
-      context: .
-      dockerfile: KCloud.Auth/Dockerfile
+    image: mcr.microsoft.com/dotnet/sdk:8.0
     environment:
       ASPNETCORE_ENVIRONMENT: Development
       SQLite__DBPath: /app/data/auth.db
       JWT__Key: "13f975f45c32948d5ab2e2a29d53d6a56b9569a9c8f8cd75d2e456ee7dedb69ee19836d25081c2c11880d58e4d494eb3010fecccabdb9ffa82b50d1b43f47641"
     volumes:
       - auth-data:/app/data
+      - .:/src
+    working_dir: /src/KCloud.Auth
+    command: ["dotnet", "watch", "run", "--urls", "http://0.0.0.0:8080"]
     ports:
       - "5003:8080"
-
+      
   gateway:
-    build:
-      context: .
-      dockerfile: KCloud.Gateway/Dockerfile
+    image: mcr.microsoft.com/dotnet/sdk:8.0
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
+    volumes:
+      - .:/src
+    working_dir: /src/KCloud.Gateway
+    command: ["dotnet", "watch", "run", "--urls", "http://0.0.0.0:8080"]
     ports:
       - "5178:8080"
-
+      
   web:
-    build:
-      context: .
-      dockerfile: KCloud.Web/Dockerfile
+    image: mcr.microsoft.com/dotnet/sdk:8.0
     environment:
       ASPNETCORE_ENVIRONMENT: Development
       FileMetadata__Url: http://filemetadata:8080
@@ -59,19 +61,25 @@ services:
       - filemetadata
       - filestorage
       - auth
+    volumes:
+      - .:/src
+    working_dir: /src/KCloud.Web
+    command: ["dotnet", "watch", "run", "--urls", "http://0.0.0.0:8080"]
     ports:
       - "5005:8080"
-
+      
   filemetadata:
-    build:
-      context: .
-      dockerfile: KCloud.FileMetadata/Dockerfile
+    image: mcr.microsoft.com/dotnet/sdk:8.0
     environment:
       ASPNETCORE_ENVIRONMENT: Development
       ConnectionStrings__FileMetadataDB: Host=postgres;Database=kcloud_db;Username=postgres;Password=Password123
-      JWT__Key: "13f975f45c32948d5ab2e2a29d53d6a56b9569a9c8f8cd75d2e456ee7dedb69ee19836d25081c2c11880d58e4d494eb3010fecccabdb9ffa82b50d1b43f47641"
+      JWT__Key: "13f975f45c32948d5ab2e2a29d53d6a56b9569a9c8f8cd75d2e456ee19836d25081c2c11880d58e4d494eb3010fecccabdb9ffa82b50d1b43f47641"
     depends_on:
       - postgres
+    volumes:
+      - .:/src
+    working_dir: /src/KCloud.FileMetadata
+    command: ["dotnet", "watch", "run", "--urls", "http://0.0.0.0:8080"]
     ports:
       - "5001:8080"
 
