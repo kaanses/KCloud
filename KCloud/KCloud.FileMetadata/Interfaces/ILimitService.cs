@@ -1,0 +1,1 @@
+using Ardalis.Result;namespace KCloud.FileMetadata.Interfaces;public interface ILimitService{    Task<Result<bool>> ValidateUploadLimitsAsync(Guid userId, long newFileSizeBytes, CancellationToken cancellationToken);}
